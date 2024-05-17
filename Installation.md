@@ -38,6 +38,8 @@ setsebool -P httpd_use_nfs 1
 ```
 ## this section will instll amazon efs utils for mounting the target on the Elastic file system
 ```
+yum -y install rust cargo openssl-devel
+
 git clone https://github.com/aws/efs-utils
 
 cd efs-utils
